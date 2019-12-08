@@ -3,11 +3,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello():
-    return """
-    <!doctype html>
-    <title>Reda</title>
-    <h1>C17456666 DT228 Cloud Computing</h1>
-    """
+    return render_template('index.html')
 
 @app.route("/contact-me")
 def email():
