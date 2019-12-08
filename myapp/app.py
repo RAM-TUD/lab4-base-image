@@ -3,8 +3,14 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello():
-    return render_template('templates/contact.html')
+    <!doctype html>
+    <title>Reda</title>
+    <h1>C17456666 DT228 Cloud Computing</h1>
+
+@app.route("/contact-me")
+def email():
+    return render_template('contact.html')
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host = '0.0.0.0' port=5000)
     
